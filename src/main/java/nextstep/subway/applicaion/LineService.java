@@ -71,7 +71,7 @@ public class LineService {
         Line line = findById(lineId);
 
         line.addSection(upStation, downStation, sectionRequest.getDistance(),
-            sectionRequest.getDistance());
+            sectionRequest.getDuration());
     }
 
     private List<StationResponse> createStationResponses(Line line) {
